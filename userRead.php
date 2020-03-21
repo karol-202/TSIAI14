@@ -42,7 +42,9 @@ function getUserAge($user) {
     $birth_date_string = $user['birth_date'];
     $birth_date = date_create($birth_date_string);
     $diff = date_diff($birth_date, date_create());
-    return $diff->y;
+    $years = $diff->y;
+    if($diff->invert) $years = -$years;
+    return $years;
 }
 
 $userId = fn($user) => $user['id'];

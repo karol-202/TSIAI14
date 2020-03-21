@@ -8,7 +8,6 @@ $action = isset($_GET['action']) ? $_GET['action'] : 'read';
 <head>
     <meta charset="UTF-8">
     <title>TSIAI14 - PDO</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>TSIAI 14</h1>
